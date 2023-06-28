@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "MDN reading time",
+  "version": "1.0",
+  "description": "Add the reading time to MDN documents",
+  "icons": {
+    "48": "images/icons8-reading-48.png",
+    "96": "images/icons8-reading-96.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://developer.mozilla.org/*"]
+    }
+  ]
+}
