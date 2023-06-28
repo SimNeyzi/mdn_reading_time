@@ -10,6 +10,6 @@ if (article) {
   badge.classList.add("color-secondary-text", "type--caption");
   badge.textContent = `⏱️ ${readingTime} min read`;
 
-  const heading = article.querySelector("h1");
-  heading.insertAdjacentElement("afterend", badge);
+  const heading = article.querySelector("header");
+  heading.appendChild(badge);
 }
